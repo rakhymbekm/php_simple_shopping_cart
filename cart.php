@@ -53,7 +53,7 @@ if (array_key_exists("goods", $_SESSION) && count($_SESSION["goods"]) > 0) {
 
 <head>
 
-  <title>Себет беті</title>
+  <title>Cart</title>
 
   <meta charset="UTF-8" />
 
@@ -64,13 +64,13 @@ if (array_key_exists("goods", $_SESSION) && count($_SESSION["goods"]) > 0) {
 </head>
 
 <body>
-    <p><a href="/catalog.php">Тауарлар каталогі</a></p>
-    <h1>Себет</h1>
+    <p><a href="/catalog.php">Catalog of products</a></p>
+    <h1>Cart</h1>
     <table>
         <thead>
         <tr>
-          <th>Тауар аты</th>
-          <th>Тауар бағасы</th>
+          <th>Product name</th>
+          <th>Price</th>
           <th></th>
         </tr>
       </thead>
@@ -78,7 +78,7 @@ if (array_key_exists("goods", $_SESSION) && count($_SESSION["goods"]) > 0) {
         <?php echo $content ?>
     </tbody>
   </table>
-  <p>Төлемге: <?=$total?>&#8376;</p>
+  <p>Total: <?=$total?>&#8376;</p>
 </body>
 
 </html>
