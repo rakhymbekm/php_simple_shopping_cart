@@ -47,7 +47,7 @@ try {
 
 <head>
 
-  <title>Тауарлар каталогі</title>
+  <title>Products catalog</title>
 
   <meta charset="UTF-8" />
 
@@ -58,12 +58,12 @@ try {
 </head>
 
 <body>
-    <p><a href="/cart.php">Себет</a></p>
+    <p><a href="/cart.php">Cart</a></p>
     <table>
         <thead>
         <tr>
-          <th>Тауар аты</th>
-          <th>Тауар бағасы</th>
+          <th>Product name</th>
+          <th>Price</th>
           <th></th>
         </tr>
       </thead>
