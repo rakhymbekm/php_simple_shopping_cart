@@ -10,7 +10,7 @@ try {
 
   if ($pdo) {
     if (!array_key_exists('id', $_GET)) {
-      die("Сұраныста тауардың дара нөмірі берілуі керек");
+      die("Request should contain an id of a product");
     }
 
     $row = request($pdo, 'SELECT * FROM goods WHERE id = ' . $_GET['id']);
@@ -65,7 +65,7 @@ try {
 
 <head>
 
-  <title>Тауар беті</title>
+  <title>Product page</title>
 
   <meta charset="UTF-8" />
 
@@ -76,16 +76,16 @@ try {
 </head>
 
 <body>
-    <p><a href="/catalog.php">Тауарлар каталогі</a></p>
-    <p><a href="/cart.php">Себет</a></p>
-    <h1>Тауардың беті</h2>
-    <p><img width="300" height="300" src="<?= $img_src ?>" alt="Тауардың бейнесі"></p>
+    <p><a href="/catalog.php">Products catalog</a></p>
+    <p><a href="/cart.php">Cart</a></p>
+    <h1>Product page</h2>
+    <p><img width="300" height="300" src="<?= $img_src ?>" alt="Product illustration"></p>
     <table>
         <thead>
         <tr>
-          <th>Тауар аты</th>
-          <th>Тауар бағасы</th>
-          <th>Тауар сипаттамасы</th>
+          <th>Product name</th>
+          <th>Price</th>
+          <th>Description</th>
           <th></th>
         </tr>
       </thead>
