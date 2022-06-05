@@ -5,7 +5,7 @@
   session_start();
 
   if (!$_POST['from']) {
-    die("Сұраныста from деген параметр болуы керек");
+    die("Request shoud countain the from parameter");
   }
 
   if ( array_key_exists("goodname", $_POST) 
